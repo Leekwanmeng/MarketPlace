@@ -18,14 +18,14 @@ export default new Vuex.Store({
           price: '1'
         },
         {
-          title: 'Apple',
-          quantity: '3',
-          price: '2'
+          title: 'Watermelon',
+          quantity: '1',
+          price: '4'
         },
         {
-          title: 'Banana',
-          quantity: '4',
-          price: '1'
+          title: 'Eggs',
+          quantity: '12',
+          price: '3'
         }
       ],
       userInfo: {
@@ -46,6 +46,18 @@ export default new Vuex.Store({
       },
       getName: state => {
         return state.userInfo.name;
+      },
+      getBirthday: state => {
+        return state.userInfo.birthday;
+      },
+      getAge: state => {
+        return state.userInfo.age;
+      },
+      getEducation: state => {
+        return state.userInfo.education;
+      },
+      getAboutMe: state => {
+        return state.userInfo.aboutMe;
       }
     },
     mutations: {

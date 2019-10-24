@@ -5,17 +5,18 @@
         <li class="nav-item active">
             <a class="nav-link">Welcome, {{ getName }}</a>
         </li>
+        <li class="nav-item">
+            <router-link class="nav-link" to="/home">Home</router-link>
+        </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                 Settings
             </a>
             <div class="dropdown-menu">
-                <router-link class="dropdown-item" :to="'/account'">Account</router-link>
+                <router-link class="dropdown-item" to="/account">Account</router-link>
                 <router-link class="dropdown-item" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
             </div>
         </li>
-    <!-- <div class="navbar-dropdown is-boxed">
-    </div> -->
     </ul>
 </nav>
 

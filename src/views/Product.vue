@@ -29,6 +29,7 @@ export default {
 
 <style>
 .card-content  {
-    padding: 5px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 </style>

@@ -27,10 +27,6 @@ export default {
     body {
         background-color: #F0F0F0;
     }
-    h1 {
-        padding: 0;
-        margin-top: 0;
-    }
     #app {
         margin: auto;
     }

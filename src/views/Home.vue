@@ -20,6 +20,6 @@ export default {
     #home {
         background-color: #FFFFFF;
         border: 1px solid #CCCCCC;
-        padding: 20px;
+        padding: 30px;
     }
 </style>
