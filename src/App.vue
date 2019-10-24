@@ -11,7 +11,7 @@ import HeaderComponent from './views/Header'
 export default {
     name: 'App',
     components: {
-        'header-component': HeaderComponent,
+        'header-component': HeaderComponent
     },
     mounted() {
         if(!this.$store.getters.getLoggedIn) {

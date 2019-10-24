@@ -14,6 +14,7 @@
             </a>
             <div class="dropdown-menu">
                 <router-link class="dropdown-item" to="/account">Account</router-link>
+                <router-link class="dropdown-item" to="/changepassword">Change Password</router-link>
                 <router-link class="dropdown-item" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
             </div>
         </li>
@@ -43,7 +44,10 @@ export default {
         logout () {
             this.$router.push({ name: 'login-component' });
 			this.$store.commit('setLoggedIn', false);
-		}
+        },
+        showPassModal() {
+            this.$store.commit('showChangePasswordModal', true);
+        }
     }
 }
 </script>

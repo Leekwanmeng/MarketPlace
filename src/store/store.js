@@ -63,6 +63,6 @@ export default new Vuex.Store({
     mutations: {
       setLoggedIn: (state, isLoggedIn) => {
         state.userInfo.isLoggedIn = isLoggedIn;
-      },
+      }
     }
 })
