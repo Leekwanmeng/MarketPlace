@@ -36,7 +36,7 @@ export default new Vuex.Store({
         birthday: '26 Sept 1995',
         age: '24',
         education: 'Graduate',
-        aboutMe: 'I am looking for a job xD',
+        aboutMe: 'I am having fun',
         email: ''
       }
     },
@@ -58,11 +58,17 @@ export default new Vuex.Store({
       },
       getAboutMe: state => {
         return state.userInfo.aboutMe;
+      },
+      getPassword: state => {
+        return state.userInfo.password;
       }
     },
     mutations: {
       setLoggedIn: (state, isLoggedIn) => {
         state.userInfo.isLoggedIn = isLoggedIn;
+      },
+      setPassword: (state, pwd) => {
+        state.userInfo.password = pwd;
       }
     }
 })
