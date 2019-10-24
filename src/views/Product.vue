@@ -1,0 +1,34 @@
+<template>
+    <div>
+        <img class="card-img-top" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        <div class="card-content">
+            <div class="media">
+                <h4 class="title is-4">{{ product.title }}</h4>
+            </div>
+            <div class="content is-clearfix">
+                <p>Quantity: {{ product.quantity }}</p>
+                <p class="is-pulled-right">
+                <span class="title is-4"><strong>${{ product.price }} ea.</strong></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'product-component',
+    props: ['product'],
+    data() {
+        return {
+            
+        }
+    }
+}
+</script>
+
+<style>
+.card-content  {
+    padding: 5px;
+}
+</style>
