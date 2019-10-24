@@ -33,10 +33,10 @@ export default new Vuex.Store({
         name: 'Kwan Meng',
         username: 'kwan',
         password: 'password',
-        birthday: '',
-        age: '',
-        education: '',
-        aboutMe: '',
+        birthday: '26 Sept 1995',
+        age: '24',
+        education: 'Graduate',
+        aboutMe: 'I am looking for a job xD',
         email: ''
       }
     },

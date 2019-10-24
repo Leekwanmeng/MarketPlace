@@ -1,8 +1,24 @@
 <template>
-    <div v-if="isLoggedIn" class="navbar has-dropdown is-hoverable">
-        <a class="navbar-link">Welcome {{ getName }}</a>
-        <router-link to="/login" v-on:click.native="logout()" replace>Logout</router-link>
-    </div>
+
+<nav v-if="isLoggedIn" class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link">Welcome, {{ getName }}</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                Settings
+            </a>
+            <div class="dropdown-menu">
+                <router-link class="dropdown-item" :to="'/account'">Account</router-link>
+                <router-link class="dropdown-item" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
+            </div>
+        </li>
+    <!-- <div class="navbar-dropdown is-boxed">
+    </div> -->
+    </ul>
+</nav>
+
 </template>
 
 <script>
@@ -30,3 +46,9 @@ export default {
     }
 }
 </script>
+
+<style>
+.navbar {
+    background-color: #e3f2fd;
+}
+</style>
